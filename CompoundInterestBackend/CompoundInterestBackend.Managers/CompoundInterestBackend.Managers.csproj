@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CompoundInterestBackend.Accessors\CompoundInterestBackend.Accessors.csproj" />
+    <ProjectReference Include="..\CompoundInterestBackend.Common.Contracts\CompoundInterestBackend.Common.Contracts.csproj" />
+    <ProjectReference Include="..\CompoundInterestBackend.Common.Shared\CompoundInterestBackend.Common.Shared.csproj" />
+    <ProjectReference Include="..\CompoundInterestBackend.Engines\CompoundInterestBackend.Engines.csproj" />
+    <ProjectReference Include="..\CompoundInterestBackend.Managers.Shared\CompoundInterestBackend.Managers.Shared.csproj" />
+    <ProjectReference Include="..\CompoundInterestBackend.Utilities\CompoundInterestBackend.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
