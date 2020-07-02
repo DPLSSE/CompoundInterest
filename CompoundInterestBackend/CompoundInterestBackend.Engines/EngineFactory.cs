@@ -17,8 +17,8 @@ namespace CompoundInterestBackend.Engines
             // NOTE: this is here to ensure the factories from the Manager are propogated down to the other factories 
             _utilityFactory = utilityFactory ?? new UtilityFactory(Context);
             _accessorFactory = accessorFactory ?? new AccessorFactory(Context, _utilityFactory);
-
-            //AddType<IRemittanceCalculationEngine>(typeof(RemittanceCalculationEngine));
+            
+            AddType<IInterestEngine>(typeof(InterestEngine));
         }
 
         public T CreateEngine<T>() where T : class

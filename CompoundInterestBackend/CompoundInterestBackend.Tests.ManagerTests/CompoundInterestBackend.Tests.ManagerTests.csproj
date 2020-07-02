@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CompoundInterestBackend.Managers.Shared\CompoundInterestBackend.Managers.Shared.csproj" />
+    <ProjectReference Include="..\CompoundInterestBackend.Managers\CompoundInterestBackend.Managers.csproj" />
   </ItemGroup>
 
 </Project>

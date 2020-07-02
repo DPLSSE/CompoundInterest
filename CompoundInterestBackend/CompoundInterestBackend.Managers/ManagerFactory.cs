@@ -13,6 +13,7 @@ namespace CompoundInterestBackend.Managers
         public ManagerFactory(AmbientContext context) : base(context)
         {
             //AddType<IAdminFulfillmentManager>(typeof(OrderManager));
+            AddType<IInterestManager>(typeof(InterestManager));
         }
 
         public T CreateManager<T>() where T : class

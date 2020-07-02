@@ -71,6 +71,7 @@
         <e p="CompoundInterestBackend.Client.Web.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="HomeController.cs" t="Include" />
+          <e p="InterestController.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
@@ -273,6 +274,8 @@
         <e p="CompoundInterestBackend.Managers.Shared.csproj" t="IncludeRecursive" />
         <e p="DataTransferObjects" t="Include" />
         <e p="DTOMapper.cs" t="Include" />
+        <e p="IInterestManager.cs" t="Include" />
+        <e p="InterestManager.cs" t="Include" />
         <e p="ManagerBase.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -300,6 +303,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="CompoundInterestBackend.Tests.EngineTests.csproj" t="IncludeRecursive" />
         <e p="DTOMapperTests.cs" t="Include" />
+        <e p="InterestEngineTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -313,6 +317,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="CompoundInterestBackend.Tests.ManagerTests.csproj" t="IncludeRecursive" />
         <e p="DTOMapperTests.cs" t="Include" />
+        <e p="InterestManagerTests.cs" t="Include" />
         <e p="ManagerTestBase.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
