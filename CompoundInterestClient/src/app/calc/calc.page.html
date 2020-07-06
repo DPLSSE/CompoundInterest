@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Hi Doug Again!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-input [(ngModel)]="principle"></ion-input>
+  <ion-button (click)="calcInterest()">Calculate</ion-button>
+  <div>
+    {{finalResult}}
+  </div>
+
+</ion-content>

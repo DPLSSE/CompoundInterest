@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'calc',
     pathMatch: 'full'
+  },
+  {
+    path: 'calc',
+    loadChildren: () => import('./calc/calc.module').then( m => m.CalcPageModule)
   },
 ];
 
