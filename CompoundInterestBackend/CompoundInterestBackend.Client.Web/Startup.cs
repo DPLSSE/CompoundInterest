@@ -26,7 +26,13 @@ namespace CompoundInterestBackend.Client.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }));
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 
@@ -42,6 +48,8 @@ namespace CompoundInterestBackend.Client.Web
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+            
+            app.UseCors("MyPolicy");
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
